@@ -1,0 +1,146 @@
+.nav {
+    margin-top: 16px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        gap: 52px;
+    }
+
+    &__item {
+        position: relative;
+        transition: 0.3s ease;
+
+        &::after {
+            transition: 0.3s ease;
+            content: "";
+            width: 0;
+            height: 1px;
+            background: black;
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+            color: grey;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__search-sec {
+        display: flex;
+        position: relative;
+    }
+
+    &__search-icon {
+        position: absolute;
+        top: 17px;
+        left: 28px;
+        color: grey;
+    }
+
+    &__input {
+        padding-top: 19px;
+        padding-right: 277px;
+        padding-left: 48px;
+        padding-bottom: 19px;
+        border-radius: 8px;
+        background: #f5f5f5;
+        outline: none;
+        border: none;
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 24px;
+        color: grey;
+    }
+
+    &__item1 {
+        color: grey;
+        position: relative;
+        transition: 0.3s ease;
+
+        &::after {
+            transition: 0.3s ease;
+            content: "";
+            width: 0;
+            height: 1px;
+            background: black;
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+            color: black;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__contact {
+        transition: 0.3s ease;
+    }
+
+    &__contact:hover {
+        color: red;
+    }
+
+    &__contact1 {
+        transition: 0.3s ease;
+    }
+
+    &__contact1:hover {
+        color: black;
+    }
+
+    &__hr {
+        margin-top: 16px;
+    }
+
+    &__media {
+        display: none;
+    }
+}
+
+@include mobile() {
+    .container {
+        max-width: 570px;
+    }
+    .nav {
+        &__wrapper {
+            justify-content: space-between;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__search-sec {
+            display: none;
+        }
+
+        &__contacts {
+            display: none;
+        }
+
+        &__media {
+            display: block;
+        }
+    }
+}

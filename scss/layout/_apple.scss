@@ -1,0 +1,258 @@
+.apple {
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+    &__wrapper {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+
+    &__img {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+    }
+
+    &__types {
+        align-items: center;
+    }
+
+    &__img2 {
+        margin-left: -10px;
+    }
+
+    &__img1 {
+        margin-top: 15px;
+    }
+
+    &__C {
+        display: flex;
+        align-items: center;
+    }
+
+    &__c-img {
+        display: flex;
+        gap: 8px;
+        margin-left: 24px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    &__price1 {
+        font-weight: 500;
+        font-size: 32px;
+        font-family: inter sans-serif;
+    }
+
+    &__old-price {
+        font-weight: 400;
+        font-size: 24px;
+        font-family: inter sans-serif;
+        color: #A0A0A0;
+        text-decoration: line-through;
+    }
+
+    &__info {
+        margin-bottom: 20px;
+    }
+
+    &__memory1 {
+        border: 1px solid grey;
+        padding: 10px 24px;
+        border-radius: 8px;
+        color: grey;
+        transition: 0.3s ease;
+    }
+
+    &__memory1:hover {
+        background: #00000036;
+    }
+
+    &__memory3 {
+        border: 1px solid grey;
+        color: #6F6F6F;
+        padding: 10px 24px;
+        border-radius: 8px;
+    }
+
+    &__memory-type {
+        display: flex;
+        gap: 16px;
+        margin-top: 30px;
+    }
+
+    &__memory5 {
+        color: #6F6F6F;
+        border: 1px solid grey;
+        border-radius: 8px;
+        padding: 10px 24px;
+    }
+
+    &__memory7 {
+        color: black;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 10px 34px;
+        transition: 0.3s ease;
+    }
+
+    &__memory7:hover{
+        background: rgba(0, 0, 0, 0.173);
+    }
+    
+    &__camera-num {
+        margin-left: 2px;
+    }
+
+    &__camera {
+        margin-left: 10px;
+    }
+
+    &__detail-info {
+        margin-top: 24px;
+    }
+
+    &__detail-name {
+        background: #F4F4F4;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 28px;
+        padding-left: 10px;
+        border-radius: 8px;
+        align-items: center;
+        display: flex;
+        transition: 0.3s ease;
+    }
+
+    &__detail-name:hover {
+        background: rgba(128, 128, 128, 0.5);
+    }
+
+
+    &__smth {
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    &__data {
+        display: flex;
+        gap: 10px;
+    }
+    &__data1 {
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    &__text {
+        color: grey;
+        font-size: 14px;
+        margin-top: 24px;
+    }
+
+    &__text-span {
+        color: black;
+        text-decoration: underline;
+    }
+
+    &__spn {
+        color: grey;
+    }
+
+    &__last-info {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__spn2 {
+        color: black;
+    }
+
+    &__infos {
+        margin-top: 36px;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__br {
+        display: none;
+    }
+
+    &__br1 {
+        display: none;
+    }
+    &__br2 {
+        display: none;
+    }
+    &__br3 {
+        display: none;
+    }
+}
+
+@include mobile() {
+    .container {
+        max-width: 570px;
+    }
+    .apple {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__img {
+            flex-direction: column-reverse;
+        }
+
+        &__types {
+            display: flex;
+            align-items: center;
+            gap: 46px;
+        }
+
+        &__img2 {
+            margin-top: 12px;
+        }
+        
+        &__br {
+            display: block;
+        }
+
+        &__last-info {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            gap: 10px;
+        }
+
+        &__infos {
+            margin-left: 16px;
+        }
+
+        &__br1 {
+            display: block;
+        }
+        &__br2 {
+            display: block;
+        }
+        &__br3 {
+            display: block;
+        }
+
+        &__text1 {
+            justify-content: center;
+            margin: auto;
+            margin-left: 50px;
+        }
+
+        &__memory1 {
+            padding: 10px 10px;
+        }
+
+        &__memory7 {
+            padding: 10px 24px;
+        }
+    }
+};

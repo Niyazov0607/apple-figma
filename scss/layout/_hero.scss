@@ -1,0 +1,42 @@
+.hero {
+
+    &__list {
+        padding-top: 44px;
+        display: flex;
+        list-style: none;
+        gap: 22px;
+        color: grey;
+    }
+
+    &__item1 {
+        color: black;
+        transition: 0.3s ease;
+    }
+
+    &__item1:hover {
+        color: grey;
+    }
+
+    &__icon1 {
+        padding-left: 16px;
+    }
+    
+    &__icon {
+        padding-left: 16px;
+    }
+
+    &__item {
+        transition: 0.3s ease;
+    }
+
+    &__item:hover {
+        color: black;
+    }
+}
+
+@include mobile() {
+
+    .hero {
+        display: none;
+    }
+}

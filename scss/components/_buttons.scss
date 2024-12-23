@@ -1,0 +1,50 @@
+.apple {
+
+    &__btns {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__btn1 {
+        background: #00000000;
+        transition: 0.3s ease;
+        color: black;
+        padding: 10px 72px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: 0.3as ease;
+    }
+
+    &__btn1:hover {
+        color: white;
+        background: #000;
+    }
+
+    &__btn2 {
+        background: #000000;
+        transition: 0.3s ease;
+        color: white;
+        padding: 10px 84px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: 0.3s ease;
+    }
+
+    &__btn2:hover {
+        background: white;
+        color: black;
+    }
+}
+
+@include mobile() {
+
+    .apple {
+
+        &__btns {
+            display: grid;
+            justify-content: center;
+        }
+    }
+}
